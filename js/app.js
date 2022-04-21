@@ -654,7 +654,7 @@
         baloon.balloon.open();
     }
     ymaps.ready(init);
-    window["FLS"] = true;
+    window["FLS"] = false;
     isWebp();
     formFieldsInit({
         viewPass: false
