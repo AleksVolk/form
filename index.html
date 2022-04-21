@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220421213852">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<form class="form" action="#">
+					<h1 class="form__title">Отправьте ваше резюме</h1>
+					<div class="form__city city-form">
+						<div class="city-form__label">
+							Постройте своё будущее c РусЭлитТрейдинг в городе
+						</div>
+						<select name="form[]" class="city">
+							<option value="1" selected>Нижний Новгород</option>
+							<option value="2">Москва</option>
+							<option value="3">Краснодар</option>
+							<option value="4">Казань</option>
+						</select>
+					</div>
+					<div class="form__body">
+						<div class="form__column">
+							<div class="form__line">
+								<input autocomplete="off" type="text" name="form[]" data-error="Введите вернoе имя" placeholder="Как вас зовут?" class="input" data-required>
+								<div class="form__decor"></div>
+							</div>
+							<div class="form__line form__line_email">
+								<input autocomplete="off" type="email" name="form[]" data-error="Введите верный email" placeholder="Ваш E–mail" class="input" data-required>
+								<div class="form__decor"></div>
+							</div>
+							<div class="form__line">
+								<select name="form[]" class="job">
+									<option value="1" selected>Программист</option>
+									<option value="2">Верстальщик</option>
+									<option value="3">Аналитик</option>
+									<option value="4">SEO специалист</option>
+									<option value="4">Контент менеджер</option>
+								</select>
+								<div class="form__decor"></div>
+							</div>
+							<div class="form__line">
+								<textarea name="form[]" placeholder="Напишите о себе кратко" class="input"></textarea>
+								<div class="form__decor"></div>
+							</div>
+							<div class="form__file file-form">
+								<label class="file-form__header">
+									<input autocomplete="off" type="file" accept=".docx, .pdf" name="form[]" data-error="Ошибка" placeholder="" class="input file-input" id="file-input">
+									<img class="file-form__icon" src="img/paperclip.svg" alt="">
+									<div class="file-form__title">Прикрепить документы</div>
+								</label>
+								<ul class="file-form__list">
+									<li class="file-form__item">
+										<div class="file-form__label">Резюме Константинопольский Константин.docx</div>
+										<img class="file-form__danger" src="img/trash.svg" alt="">
+									</li>
+									<li class="file-form__item">
+										<div class="file-form__label">Рекомендация.docx</div>
+										<img class="file-form__danger" src="img/trash.svg" alt="">
+									</li>
+								</ul>
+							</div>
+							<div class="form__agreement">
+								<div class="checkbox">
+									<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" data-required>
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__text">
+											Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”
+										</span>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="file-form__btn btn">Отправить</button>
+						</div>
+						<div class="form__column">
+							<div class="form__map" id="map"></div>
+							<div class="form__conatcts conatcts">
+								<div class="conatcts__label">Контакты:</div>
+								<a href="tel:+74959297078" class="conatcts__phone">+7 495 929-70-78</a>
+								<a href="mailto:welcome@ret-team.su" class="conatcts__email">welcome@ret-team.su</a>
+								<div class="conatcts__schedule">Мы работаем в будни с 9:00 до 18:00. </div>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20220421213852"></script>
+	<script src="js/app.min.js?_v=20220421213852"></script>
+</body>
+
+</html>
