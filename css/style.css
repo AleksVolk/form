@@ -163,6 +163,13 @@ textarea {
   appearance: none;
 }
 
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  outline: none;
+}
+
 .input {
   position: relative;
   border-radius: 0 !important;
